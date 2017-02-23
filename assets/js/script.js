@@ -122,10 +122,10 @@
             var newElement = $('<div>', {
                 id: 'question'
             });
-            newElement.append('<p class="blue-grey-text">Go Full! Answer all questions from any module: </p>');
+            newElement.append('<p class="blue-grey-text">Practice questions from any Internal</p>');
             for (var i = 0; i < 3; i++) {
                 var item = '<input class="with-gap" style="display: inline-block"type="radio" name="module" id="mod' + (i + 1) + '" value=' + (i) + ' />';
-                item += '<label class="black-text" style="padding-right:15px;display:inline-block" for="mod' + (i + 1) + '" > Module ' + (i + 1) + '</label>';
+                item += '<label class="black-text" style="padding-right:15px;display:inline-block" for="mod' + (i + 1) + '" > Test - ' + (i + 1) + '</label>';
                 newElement.append(item);
             }
 
