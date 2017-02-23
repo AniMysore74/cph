@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+- 0.12
+before_install:
+- rvm install 2.2.2
+install:
+- npm install cheerio
+- npm install moment
+- gem install jekyll
+before_script:
+- node _travis_scripts/before.js
+script:
+- bash ./_travis_scripts/deploy.sh
+env:
+  global:
+  - ENCRYPTION_LABEL: efa545431d8a
+  - COMMIT_AUTHOR_EMAIL: travis@example.com
